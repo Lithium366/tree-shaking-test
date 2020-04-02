@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "@grxfrontend/good-ui": {
+      "signature": "0b9aceaeb81b0de32ee41a0deaa46c42",
+      "file": true
+    }
+  }
+}

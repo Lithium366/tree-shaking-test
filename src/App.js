@@ -1,24 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {
+  Button,
+  TextField,
+  Text,
+  Carousel,
+  Icon,
+  Black,
+  White,
+  Yellow,
+  Bottle36
+} from '@grxfrontend/good-ui';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button>I am a button</Button>
+      <br />
+      <Text>I am a text</Text>
+      <br />
+      <TextField placeholder="I am a TextField" />
+      <br />
+      <Carousel slides={[<Black />, <Yellow />, <White />]} />
+      <div>
+        Icons: <br />
+        <Icon>
+          <Bottle36 />
+        </Icon>
+      </div>
     </div>
   );
 }

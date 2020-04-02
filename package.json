@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@grxfrontend/eslint-config-grx": "^1.0.7",
+    "@grxfrontend/gizmo": "1.0.18",
+    "@grxfrontend/good-ui": "file:.yalc/@grxfrontend/good-ui",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -10,8 +13,10 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
+  "sideEffects": false,
   "scripts": {
     "start": "react-scripts start",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -30,5 +35,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "jest": "24.9.0",
+    "source-map-explorer": "^2.4.2"
   }
 }
